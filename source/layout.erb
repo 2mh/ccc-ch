@@ -3,13 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <title><% if current_page.data.title %><%= current_page.data.title %> | <% end %><%= _('title') %></title>
+        <meta name="description" content="Chaos Computer Club Schweiz">
         <meta name="viewport" content="width=device-width">
 
         <%= stylesheet_link_tag 'bootstrap.min.css' %>
-        <%= stylesheet_link_tag 'css/bootstrap-responsive.min.css' %>
+        <%= stylesheet_link_tag 'bootstrap-responsive.min.css' %>
         <%= stylesheet_link_tag 'main.css' %>
+
+        <%= favicon_tag 'favicon.png' %>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,29 +27,28 @@
                         <span class="icon-bar"></span>
                     </a>
 
-                    <%= link_to I18n.t('title'), 'index.html', :class => 'brand' %>
+                    <%= link_to _('title_short'), 'http://ccc-ch.ch/', :class => 'brand' %>
 
                     <div class="nav-collapse collapse">
-                        <ul class="nav pull-right">
-                            <li><%= link_to I18n.t('contact'), path('contact') %></li>
-                            <li><%= link_to I18n.t('impressum'), path('impressum') %></li>
+                        <ul class="nav">
+                          <li><%= link_to _('impressum'), path('impressum') %></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span3">
+                <img src="/img/ccc-ch.png" alt="CCC CH" title="CCC CH" class="logo-img">
+            </div>
 
-<%= yield %>
-
-            <hr>
-
-            <footer>
-                <p>&copy; Company 2012</p>
-            </footer>
-
-        </div> <!-- /container -->
+            <div class="span9">
+              <%= yield %>
+            </div>
+          </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>

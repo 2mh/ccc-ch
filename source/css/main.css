@@ -2,4 +2,12 @@
     margin-bottom:20px;
 }
 
+.logo-img {
+    max-width:100%;
+}
+
+@media screen and (max-device-width: 480px) {
+
+}
+
 /* eof */
