@@ -1,0 +1,9 @@
+en:
+  title: Chaos Computer Club Switzerland
+  title_short: CCC CH
+  contact: Contact
+  impressum: Impressum
+
+  paths:
+    contact: contact
+    impressum: impressum
