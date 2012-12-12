@@ -4,7 +4,7 @@ $(function() {
 
   window.setInterval(function() {
     $("#caption-switzerland").fadeOut('fast', function() {
-      $(this).text(texts[++pos]);
+      $(this).text(texts[++pos % texts.length]);
     });
     $("#caption-switzerland").fadeIn('fast');
   }, 3000);
