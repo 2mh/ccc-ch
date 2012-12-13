@@ -1,5 +1,5 @@
 $(function() {
-  var texts = ['Schweiz', 'Suisse', 'Suizzera', 'Svizra', 'Switzerland'];
+  var texts = ['Schweiz', 'Suisse', 'Svizzera', 'Svizra', 'Switzerland'];
   var pos = 0;
 
   window.setInterval(function() {
