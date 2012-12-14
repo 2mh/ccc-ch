@@ -6,8 +6,8 @@
     max-width:100%;
 }
 
-@media screen and (max-device-width: 480px) {
-
+h1 a {
+  color:inherit;
 }
 
 /* eof */
