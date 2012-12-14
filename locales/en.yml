@@ -3,7 +3,12 @@ en:
   title_short: CCC Switzerland
   contact: Contact
   impressum: Impressum
+  # TODO: localize
+  statuten: Manifest
 
   paths:
     contact: contact
     impressum: impressum
+    # TODO: localize
+    statuten: manifest
+
