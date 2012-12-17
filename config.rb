@@ -62,8 +62,6 @@ activate :i18n, :mount_at_root => :de
 
 # Build-specific configuration
 configure :build do
-  set :http_prefix, '/ccc-ch/'
-
   # For example, change the Compass output style for deployment
   activate :minify_css
 
