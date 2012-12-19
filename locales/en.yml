@@ -4,6 +4,7 @@ en:
   contact: Contact
   impressum: Impressum
   faq: FAQ
+  protocol: Protocol
   # TODO: localize
   statuten: Manifest
 
@@ -11,6 +12,6 @@ en:
     contact: contact
     impressum: impressum
     faq: faq
+    protocol: protocol
     # TODO: localize
     statuten: manifest
-

@@ -6,6 +6,7 @@ de:
   statuten: Statuten
   faq: FAQ
   press: Presse
+  protocol: Protokoll
 
   paths:
     contact: kontakt
@@ -13,4 +14,4 @@ de:
     statuten: statuten
     faq: faq
     press: presse
-
+    protocol: protokoll
